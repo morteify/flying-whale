@@ -20,6 +20,8 @@ const Container = styled.main`
   font-family: Open Sans;
   @media (max-width: 1024px) {
     flex-direction: column;
+    width: 100%;
+    height: 100%;
   }
 `;
 
@@ -28,6 +30,11 @@ const Title = styled.h1`
   font-weight: 900;
   color: #343434;
   margin-bottom: 0.1em;
+  @media (max-width: 1024px) {
+  }
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
+  }
 `;
 
 const Subtitle = styled.p`
@@ -101,6 +108,10 @@ const Accent = styled.span`
 const WhaleTail = styled.img.attrs({ src: whaleTail })`
   width: 40em;
   height: 40em;
+  @media (max-width: 1024px) {
+    width: 25em;
+    height: 25em;
+  }
 `;
 
 const LeftSection = styled.div`
@@ -108,6 +119,7 @@ const LeftSection = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  margin: 0 2em;
 `;
 
 const RightSection = styled.div`
